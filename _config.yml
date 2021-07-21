@@ -5,9 +5,9 @@ header-img: img/post-bg-desk.jpg
 email: kushinn@hotmail.com
 description: "Welcome to my blog"
 keyword: "Rafechen的博客 Rafechen blog Rafechen rafechen"
-url: "https://kushinn.github.io"          # your host, for absolute URL
+url: "https://rafechen.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/kushinn/kushinn.github.io.git" # you code repository
+github_repo: "https://github.com/kushinn/rafechen.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -54,10 +54,10 @@ kramdown:
 # 评论系统
 # Gitalk
 gitalk:
-  enable: true   #是否开启Gitalk评论
+  enable: false   #是否开启Gitalk评论
   clientID: 5943aeedd7ee1a1cbdf7        # 嘿，别乱看我的秘密                #生成的clientID
   clientSecret: 4ffbc9e4eb8b6aef2b390b2bda69ed6a744c5c07    #生成的clientSecret
-  repo: kushinn.github.io    #仓库名称
+  repo: rafechen.github.io    #仓库名称
   owner: kushinn    #github用户名
   admin: kushinn
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
