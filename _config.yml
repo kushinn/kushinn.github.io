@@ -11,7 +11,7 @@ github_repo: "https://github.com/kushinn/kushinn.github.io.git" # you code repos
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "与其看教科书，还不如读Linux源码。"
+sidebar-about-description: "A language that doesn't affect the way you think about programming, is not worth knowing. ——Alan Perlis"
 sidebar-avatar: /img/yeswecode.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
