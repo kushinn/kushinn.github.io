@@ -7,4 +7,6 @@ header-img: img/background/default.png
 catalog: true
 tags:
     - Virtual Texture
+    - Rendering
+    - GPU Driven Pipeline
 ---
