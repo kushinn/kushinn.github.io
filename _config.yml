@@ -19,6 +19,7 @@ sidebar-avatar: /img/author.jpg      # use absolute URL, seeing it's used in bot
 # SNS settings
 RSS: true
 github_username:    kushinn
+zhihu_username:     rafe.chen
 
 
 
