@@ -28,11 +28,6 @@ layout: default
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <div class="tags">
-                        {% for tag in page.tags %}
-                        <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
-                        {% endfor %}
-                    </div>
                     <h1>{{ page.title }}</h1>
                     {% comment %}
                         always create a h2 for keeping the margin , Hux
@@ -41,7 +36,16 @@ layout: default
                     <h2 class="subheading">{{ page.subtitle }}</h2>
                     {% comment %} endif {% endcomment %}
 		   
-                    <span class="meta">作者: {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} 时间: {{ page.date | date: "%B %-d, %Y" }}字数：{{ content | strip_html | strip_newlines | split: "" | size }}</span>
+                    <div class="tags">
+                        {% for tag in page.tags %}
+                        <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
+                        {% endfor %}
+                    </div>
+                    <span class="meta">
+                        <p>Author: {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}</p><br/>
+                        <p>Date: {{ page.date | date: "%B %-d, %Y" }}</p><br/>
+                        <p>Word Count：{{ content | strip_html | strip_newlines | split: "" | size }}</p><br/>
+                    </span>
                 </div>
             </div>
         </div>
