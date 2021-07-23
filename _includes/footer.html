@@ -89,6 +89,20 @@
                         </a>
                     </li>
                     {% endif %}
+                    {% if site.email %}
+                    <li>
+                        <a target="_blank" href="✉️{{site.email}}">
+                            <p>✉️{{site.email}}</p>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.gmail %}
+                    <li>
+                        <a target="_blank" href="✉️{{site.gmail}}">
+                            <p>✉️{{site.gmail}}</p>
+                        </a>
+                    </li>
+                    {% endif %}
                 </ul>
                 <p class="copyright text-muted">
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}

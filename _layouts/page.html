@@ -188,10 +188,18 @@ layout: default
                             
                         </ul>
                         {% if site.email %}
-                            <p>✉️{{site.email}}</p>
+                        <li>
+                            <a target="_blank" href="✉️{{site.email}}">
+                                <p>✉️{{site.email}}</p>
+                            </a>
+                        </li>
                         {% endif %}
                         {% if site.gmail %}
-                            <p>✉️{{site.gmail}}</p>
+                        <li>
+                            <a target="_blank" href="✉️{{site.gmail}}">
+                                <p>✉️{{site.gmail}}</p>
+                            </a>
+                        </li>
                         {% endif %}
                     </div>
                 </section>
