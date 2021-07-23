@@ -185,21 +185,16 @@ layout: default
                                 </a>
                             </li>
                             {% endif %}
-                            
                         </ul>
                         {% if site.email %}
-                        <li>
-                            <a target="_blank" href="{{site.email}}">
-                                <p>✉️{{site.email}}</p>
-                            </a>
-                        </li>
+                        <a target="_blank" href="{{site.email}}">
+                            <p>✉️{{site.email}}</p>
+                        </a>
                         {% endif %}
                         {% if site.gmail %}
-                        <li>
-                            <a target="_blank" href="{{site.gmail}}">
-                                <p>✉️{{site.gmail}}</p>
-                            </a>
-                        </li>
+                        <a target="_blank" href="{{site.gmail}}">
+                            <p>✉️{{site.gmail}}</p>
+                        </a>
                         {% endif %}
                     </div>
                 </section>

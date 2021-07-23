@@ -90,19 +90,17 @@
                     </li>
                     {% endif %}
                 </ul>
+                <ul class="list-inline text-center">
                 {% if site.email %}
-                <li>
-                    <a target="_blank" href="{{site.email}}">
-                        <p>✉️{{site.email}}</p>
-                    </a>
-                </li>
+                <a target="_blank" href="{{site.email}}">
+                    <p>✉️{{site.email}}</p>
+                </a>
                 {% endif %}
                 {% if site.gmail %}
-                <li>
-                    <a target="_blank" href="{{site.gmail}}">
-                        <p>✉️{{site.gmail}}</p>
-                    </a>
-                </li>
+                <a target="_blank" href="{{site.gmail}}">
+                    <p>✉️{{site.gmail}}</p>
+                </a>
+                </ul>
                 {% endif %}
                 <p class="copyright text-muted">
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
