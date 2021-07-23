@@ -42,9 +42,9 @@ layout: default
                         {% endfor %}
                     </div>
                     <span class="meta">
-                        <p>Author: {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}</p><br/>
-                        <p>Date: {{ page.date | date: "%B %-d, %Y" }}</p><br/>
-                        <p>Word Count：{{ content | strip_html | strip_newlines | split: "" | size }}</p><br/>
+                        Author: {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}<br/>
+                        Date: {{ page.date | date: "%B %-d, %Y" }}<br/>
+                        Word Count：{{ content | strip_html | strip_newlines | split: "" | size }}<br/>
                     </span>
                 </div>
             </div>
